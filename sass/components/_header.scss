@@ -1,0 +1,104 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header {
+  min-height: 80px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+header .container nav {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+header .container nav .logo {
+  color: $color-web;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+}
+header .container nav .nav {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+header .container nav .nav .nav__page {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  text-transform: capitalize;
+  position: relative;
+}
+.nav__current {
+  color: $color-web;
+}
+header .container nav .nav .nav__page.nav__current::after {
+  position: absolute;
+  content: '';
+  left: 0.01em;
+  top: 13px;
+  width: 100%;
+  height: 4px;
+  background-color: $color-web;
+  border-radius: 2px;
+  margin-top: 30px;
+}
+.page-header__tel,
+.page-header__mail {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $color-segundo-texto;
+}
+.page-header__links {
+  margin-right: 50px;
+}
+.page-header {
+  display: flex;
+  align-items: center;
+}
+header
+  .container
+  .page-header
+  li
+  .page-header__link
+  .page-header__icon.page-header__email {
+  fill: $color-segundo-texto;
+  width: 20px;
+  height: 12px;
+}
+header
+  .container
+  .page-header
+  li
+  .page-header__link
+  .page-header__icon.page-header__smartphone {
+  fill: $color-segundo-texto;
+  width: 10px;
+  height: 17px;
+}
+header .container .page-header li .page-header__link:hover,
+header .container .page-header li .page-header__link:focus,
+header .container .page-header li .page-header__link:hover .page-header__icon {
+  color: $color-web;
+  fill: $color-web;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: linear;
+}

@@ -1,0 +1,51 @@
+.customers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.customers .container h2 {
+  color: $color-principal-texto;
+  font-size: 36px;
+  line-height: 1.16;
+  font-weight: 700px;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+.customers .container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  padding-bottom: 151px;
+  padding-top: 50px;
+}
+.customers .container ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: solid 1px $iconos;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 92px;
+  width: 170px;
+}
+.customers .container ul li:hover {
+  border: solid 1px $color-web;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: linear;
+}
+.customers .container ul li .icon-customer {
+  fill: $iconos;
+}
+.customers .container ul li:hover .icon-customer {
+  fill: $color-web;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: linear;
+}

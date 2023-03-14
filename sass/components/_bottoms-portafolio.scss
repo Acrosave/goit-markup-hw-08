@@ -1,0 +1,45 @@
+.section-main {
+  padding: 94px 0px;
+}
+.filter-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.btn-content {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+.filter-btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: $color-work;
+  border-radius: 4px;
+  border-style: none;
+  cursor: pointer;
+  padding: 6px 24px;
+  margin-right: 10px;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: $color-web;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.8),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $color-primario-fondo-pantalla;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: linear;
+}
