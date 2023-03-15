@@ -1,51 +1,55 @@
-.feature {
+.grid {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.feature .container .feature-list {
   flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-  display: flex;
-  gap: 30px;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  &__item {
+    flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
 }
-.feature .container .feature-list li div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: $color-work;
-  border-radius: 15px;
+.feature {
+  padding-bottom: 60px;
+}
+.features__box {
   height: 120px;
-  margin-bottom: 15px;
-  width: 270px;
+  background-color: $color-work;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--margin {
+    margin-bottom: 30px;
+  }
 }
-.feature .container .feature-list li div .feature-list__icon-feature {
-  width: 70px;
-  height: 70px;
-}
-.feature .container .feature-list li .feature-list__desciption {
-  list-style: none;
-  width: 270px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: $color-segundo-texto;
-}
-.feature .container .feature-list li .feature-list__title {
-  text-transform: uppercase;
-  color: $color-principal-texto;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
+.features__title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-align: left;
-  padding-top: 25px;
-  padding-bottom: 10px;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  &--margin {
+    margin-bottom: 10px;
+  }
+}
+.features__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.features__item {
+  --grid-item: 1;
+  @media screen and (min-width: 480px) {
+    --grid-item: 1;
+  }
+  @media screen and (min-width: 768px) {
+    --grid-item: 2;
+  }
+  @media screen and (min-width: 1200px) {
+    --grid-item: 4;
+  }
 }

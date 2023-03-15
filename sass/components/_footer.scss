@@ -1,7 +1,7 @@
 .footbar {
   font-style: normal;
   background-color: $color-segundo-fondo-pantalla;
-  padding: 50px 0px;
+  padding: 60px 0;
 }
 footer .logo {
   color: $color-web;
@@ -14,10 +14,24 @@ footer .logo {
 }
 footer .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 80px;
-  text-align-last: center;
+  align-items: baseline;
+}
+@media screen and (max-width: 767px) {
+  .footbar {
+    font-style: normal;
+    background-color: $color-segundo-fondo-pantalla;
+    padding: 70px 60px;
+  }
+  footer .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 80px;
+    text-align: center;
+  }
 }
 footer .container .footer-links ul {
   list-style: none;
@@ -100,13 +114,12 @@ footer .container aside ul li:hover a .icon {
   text-transform: uppercase;
   color: $color-primario-fondo-pantalla;
   padding-bottom: 20px;
-  text-align: center;
 }
 .suscribe-footer .flex-suscribe {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
+  flex-wrap: wrap;
   position: relative;
 }
 .flex-suscribe__btn-footer {

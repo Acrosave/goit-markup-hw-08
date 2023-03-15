@@ -5,7 +5,7 @@
   list-style: none;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .menu {
     display: none;
   }
@@ -41,7 +41,7 @@
   outline: none;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
@@ -53,7 +53,7 @@
 }
 
 .menu-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
@@ -62,7 +62,7 @@
   background-color: $color-primario-fondo-pantalla;
   z-index: 999;
   overflow: auto;
-  transform: translateX(100%);
+  transform: translateY(-100%);
   transition: transform 250ms ease-in-out;
 }
 

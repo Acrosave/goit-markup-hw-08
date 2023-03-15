@@ -25,8 +25,8 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg class="icon-close" width="24" height="24">
-            <use href="./img/sprite.svg#icon-menu-mob"></use>
+          <svg class="icon-close" width="40" height="40">
+            <use href="./img/icons/sprite.svg#icon-menu-mob"></use>
           </svg>
         </button>
         <nav>
@@ -51,7 +51,7 @@
               href="mailto:info@devstudio.com"
               class="page-header__mail page-header__links page-header__link"
               ><svg class="page-header__icon page-header__email">
-                <use href="./img/sprite.svg#email"></use>
+                <use href="./img/icons/sprite.svg#email"></use>
               </svg>
               info@devstudio.com</a
             >
@@ -61,7 +61,7 @@
               href="tel:+525555296000"
               class="page-header__tel page-header__links page-header__link"
               ><svg class="page-header__icon page-header__smartphone">
-                <use href="./img/sprite.svg#smartphone"></use>
+                <use href="./img/icons/sprite.svg#smartphone"></use>
               </svg>
               +52 55 5529 6000</a
             >
@@ -70,7 +70,7 @@
         <div class="menu-container js-menu-container" id="mobile-menu">
           <button class="menu-toggle js-close-menu">
             <svg width="24" height="24">
-              <use href="./img/sprite.svg#icon-close-btn-mob"></use>
+              <use href="./img/icons/sprite.svg#icon-close-btn-mob"></use>
             </svg>
           </button>
           <ul class="mobile-menu">
@@ -135,7 +135,36 @@
             <li>
               <div class="container-card">
                 <div class="card-image">
-                  <img src="./img/8.jpg" width="370" alt="Tecnoduck" />
+                  <picture>
+                    <source
+                      srcset="
+                        ../img/portfolio/desktop/img1-desktop-min.jpg    1x,
+                        ../img/portfolio/desktop/img1-desktop@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ../img/portfolio/tablet/img1-tablet-min.jpg    1x,
+                        ../img/portfolio/tablet/img1-tablet@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ../img/portfolio/mobile/img1-mobile-min.jpg    1x,
+                        ../img/portfolio/mobile/img1-mobile@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="../img/portfolio/desktop/img1-desktop-min.jpg"
+                      alt="Tecnoduck"
+                      width="450"
+                    />
+                  </picture>
                   <div class="container-card__card-animation">
                     <p>
                       Tecnoduck es una plataforma de distribución de coronavirus
@@ -154,7 +183,36 @@
             <li>
               <div class="container-card">
                 <div class="card-image">
-                  <img src="./img/9.jpg" width="370" alt="Póster" />
+                  <picture>
+                    <source
+                      srcset="
+                        ../img/portfolio/desktop/img2-desktop-min.jpg    1x,
+                        ../img/portfolio/desktop/img2-desktop@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ../img/portfolio/tablet/img2-tablet-min.jpg    1x,
+                        ../img/portfolio/tablet/img2-tablet@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ../img/portfolio/mobile/img2-mobile-min.jpg    1x,
+                        ../img/portfolio/mobile/img2-mobile@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="../img/portfolio/desktop/img2-desktop-min.jpg"
+                      alt="Poster"
+                      width="450"
+                    />
+                  </picture>
                   <div class="container-card__card-animation">
                     <p>
                       Tecnoduck es una plataforma de distribución de coronavirus
@@ -174,7 +232,36 @@
             <li>
               <div class="container-card">
                 <div class="card-image">
-                  <img src="./img/10.jpg" width="370" alt="Tecnoduck" />
+                  <picture>
+                    <source
+                      srcset="
+                        ../img/portfolio/desktop/img3-desktop-min.jpg    1x,
+                        ../img/portfolio/desktop/img3-desktop@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ../img/portfolio/tablet/img3-tablet-min.jpg    1x,
+                        ../img/portfolio/tablet/img3-tablet@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ../img/portfolio/mobile/img3-mobile-min.jpg    1x,
+                        ../img/portfolio/mobile/img3-mobile@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="../img/portfolio/desktop/img3-desktop-min.jpg"
+                      alt="Restaurante"
+                      width="450"
+                    />
+                  </picture>
                   <div class="container-card__card-animation">
                     <p>
                       Tecnoduck es una plataforma de distribución de coronavirus
@@ -195,7 +282,36 @@
             <li>
               <div class="container-card">
                 <div class="card-image">
-                  <img src="./img/11.jpg" width="370" alt="Tecnoduck" />
+                  <picture>
+                    <source
+                      srcset="
+                        ../img/portfolio/desktop/img4-desktop-min.jpg    1x,
+                        ../img/portfolio/desktop/img4-desktop@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ../img/portfolio/tablet/img4-tablet-min.jpg    1x,
+                        ../img/portfolio/tablet/img4-tablet@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ../img/portfolio/mobile/img4-mobile-min.jpg    1x,
+                        ../img/portfolio/mobile/img4-mobile@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="../img/portfolio/desktop/img4-desktop-min.jpg"
+                      alt="Marketing"
+                      width="450"
+                    />
+                  </picture>
                   <div class="container-card__card-animation">
                     <p>
                       Tecnoduck es una plataforma de distribución de coronavirus
@@ -214,7 +330,36 @@
             <li>
               <div class="container-card">
                 <div class="card-image">
-                  <img src="./img/12.jpg" width="370" alt="Tecnoduck" />
+                  <picture>
+                    <source
+                      srcset="
+                        ../img/portfolio/desktop/img5-desktop-min.jpg    1x,
+                        ../img/portfolio/desktop/img5-desktop@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ../img/portfolio/tablet/img5-tablet-min.jpg    1x,
+                        ../img/portfolio/tablet/img5-tablet@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ../img/portfolio/mobile/img5-mobile-min.jpg    1x,
+                        ../img/portfolio/mobile/img5-mobile@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="../img/portfolio/desktop/img5-desktop-min.jpg"
+                      alt="Cajas"
+                      width="450"
+                    />
+                  </picture>
                   <div class="container-card__card-animation">
                     <p>
                       Tecnoduck es una plataforma de distribución de coronavirus
@@ -233,7 +378,36 @@
             <li>
               <div class="container-card">
                 <div class="card-image">
-                  <img src="./img/13.jpg" width="370" alt="Tecnoduck" />
+                  <picture>
+                    <source
+                      srcset="
+                        ../img/portfolio/desktop/img6-desktop-min.jpg    1x,
+                        ../img/portfolio/desktop/img6-desktop@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ../img/portfolio/tablet/img6-tablet-min.jpg    1x,
+                        ../img/portfolio/tablet/img6-tablet@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ../img/portfolio/mobile/img6-mobile-min.jpg    1x,
+                        ../img/portfolio/mobile/img6-mobile@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="../img/portfolio/desktop/img6-desktop-min.jpg"
+                      alt="Sitio-web"
+                      width="450"
+                    />
+                  </picture>
                   <div class="container-card__card-animation">
                     <p>
                       Tecnoduck es una plataforma de distribución de coronavirus
@@ -254,7 +428,36 @@
             <li>
               <div class="container-card">
                 <div class="card-image">
-                  <img src="./img/14.jpg" width="370" alt="Tecnoduck" />
+                  <picture>
+                    <source
+                      srcset="
+                        ../img/portfolio/desktop/img7-desktop-min.jpg    1x,
+                        ../img/portfolio/desktop/img7-desktop@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ../img/portfolio/tablet/img7-tablet-min.jpg    1x,
+                        ../img/portfolio/tablet/img7-tablet@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ../img/portfolio/mobile/img7-mobile-min.jpg    1x,
+                        ../img/portfolio/mobile/img7-mobile@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="../img/portfolio/desktop/img7-desktop-min.jpg"
+                      alt="Edición"
+                      width="450"
+                    />
+                  </picture>
                   <div class="container-card__card-animation">
                     <p>
                       Tecnoduck es una plataforma de distribución de coronavirus
@@ -275,7 +478,36 @@
             <li>
               <div class="container-card">
                 <div class="card-image">
-                  <img src="./img/15.jpg" width="370" alt="Tecnoduck" />
+                  <picture>
+                    <source
+                      srcset="
+                        ../img/portfolio/desktop/img8-desktop-min.jpg    1x,
+                        ../img/portfolio/desktop/img8-desktop@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ../img/portfolio/tablet/img8-tablet-min.jpg    1x,
+                        ../img/portfolio/tablet/img8-tablet@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ../img/portfolio/mobile/img8-mobile-min.jpg    1x,
+                        ../img/portfolio/mobile/img8-mobile@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="../img/portfolio/desktop/img8-desktop-min.jpg"
+                      alt="Lab"
+                      width="450"
+                    />
+                  </picture>
                   <div class="container-card__card-animation">
                     <p>
                       Tecnoduck es una plataforma de distribución de coronavirus
@@ -294,7 +526,36 @@
             <li>
               <div class="container-card">
                 <div class="card-image">
-                  <img src="./img/16.jpg" width="370" alt="Tecnoduck" />
+                  <picture>
+                    <source
+                      srcset="
+                        ../img/portfolio/desktop/img9-desktop-min.jpg    1x,
+                        ../img/portfolio/desktop/img9-desktop@2x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ../img/portfolio/tablet/img9-tablet-min.jpg    1x,
+                        ../img/portfolio/tablet/img9-tablet@2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ../img/portfolio/mobile/img9-mobile-min.jpg    1x,
+                        ../img/portfolio/mobile/img9-mobile@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="../img/portfolio/desktop/img9-desktop-min.jpg"
+                      alt="Negocio"
+                      width="450"
+                    />
+                  </picture>
                   <div class="container-card__card-animation">
                     <p>
                       Tecnoduck es una plataforma de distribución de coronavirus
@@ -321,7 +582,10 @@
         <address class="footer-links">
           <a href="./index.html" class="logo">WebStudio</a>
           <ul>
-            <li>Calz. Ticomán 500, Ciudad de México, CDMX, México</li>
+            <li>
+              Calz. Ticomán 500, Ciudad de <br />
+              México, CDMX, México
+            </li>
             <li>
               <a class="footer-links__contact" href="mailto:info@example.com"
                 >info@example.com</a
@@ -340,21 +604,21 @@
             <li>
               <a href="#">
                 <svg class="icon" width="20" height="20">
-                  <use href="./img/sprite.svg#instagram"></use>
+                  <use href="./img/icons/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#">
                 <svg class="icon" width="20" height="20">
-                  <use href="./img/sprite.svg#twitter"></use>
+                  <use href="./img/icons/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#">
                 <svg class="icon" width="20" height="20">
-                  <use href="./img/sprite.svg#facebook"></use>
+                  <use href="./img/icons/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
@@ -363,7 +627,7 @@
                 href="https://www.linkedin.com/in/santiago-andres-medina-alvarez-3a5265256"
               >
                 <svg class="icon" width="20" height="20">
-                  <use href="./img/sprite.svg#linkedin"></use>
+                  <use href="./img/icons/sprite.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -385,7 +649,7 @@
               <button class="flex-suscribe__btn-footer" type="submit">
                 Suscríbase
                 <svg width="24" height="24">
-                  <use href="./img/sprite.svg#icon-telegram"></use>
+                  <use href="./img/icons/sprite.svg#icon-telegram"></use>
                 </svg>
               </button>
             </div>
