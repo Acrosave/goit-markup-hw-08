@@ -1,0 +1,87 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 15;
+  overflow-y: scroll;
+  &.is-hidden {
+    opacity: 0;
+    visibility: visible;
+    pointer-events: none;
+  }
+  &.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+}
+@media screen and (max-width: 768px) {
+  .backdrop--padding {
+    padding: 93px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 4px;
+  background-color: $color-primario-fondo-pantalla;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  &--size {
+    @media screen and (min-width: 768px) {
+      height: 609px;
+    }
+    @media screen and (min-width: 1200px) {
+      min-width: 528px;
+      height: 581px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal--padding {
+    padding-top: 8px;
+    padding-right: 8px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal--margin {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.modal__button-close {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $color-primario-fondo-pantalla;
+  z-index: 1;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $color-web;
+  }
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+}

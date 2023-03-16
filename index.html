@@ -35,7 +35,7 @@
           </svg>
         </button>
         <nav>
-          <a class="logo" href="index.html">WebStudio</a>
+          <a class="logo" href="index.html"><span>Web</span>Studio</a>
           <ul class="nav menu">
             <li>
               <a class="nav__page nav__current" href="./index.html">Estudio</a>
@@ -100,8 +100,6 @@
           <div>
             <a href="#">Instagram</a>
             <a href="#">Twitter</a>
-            <a href="#">Facebook</a>
-            <a href="#">LinkedIn</a>
           </div>
         </div>
       </div>
@@ -109,111 +107,102 @@
     <main>
       <section class="hero">
         <div class="container hero-section">
-          <h1 class="hero-title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+          <h1 class="hero__title">
+            SOLUCIONES EFICACES
+            <span class="hero__title--wrap">PARA SU NEGOCIO </span>
+          </h1>
           <button
             data-modal-open
             type="button"
-            class="hero-btn hero-btn-contain"
+            class="hero-btn hero-btn-contain hero__button"
           >
             Solicite nuestro servicio
           </button>
-          <div class="backdrop backdrop--padding hero--is-hidden" data-modal>
-            <div class="modal">
-              <button class="btn-modal" data-modal-close>
-                <svg class="icon-close" width="15" height="13">
-                  <use href="./img/icons/sprite.svg#icon-close"></use>
+        </div>
+        <div class="backdrop backdrop--padding is-hidden" data-modal>
+          <div class="modal modal--size modal--padding modal--margin">
+            <button type="button" class="modal__button-close" data-modal-close>
+              <svg width="11" height="11">
+                <use href="./img/icons/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <form class="modal__form modal__form--padding" autocomplete="on">
+              <p class="modal__form-text modal__form-text--padding">
+                Deje sus datos, nos contactaremos con usted
+              </p>
+              <div class="form-field">
+                <label for="name">Nombre</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="modal__input modal__input--padding modal__input--margin modal__input--font"
+                />
+                <svg width="18" height="18" class="form-field__icon">
+                  <use href="./img/icons/sprite.svg#icon-person-black"></use>
                 </svg>
-              </button>
-              <h3>Deje sus datos, nos contactaremos con usted</h3>
-              <form
-                class="modal-relative"
-                name="signup_form"
-                autocomplete="on"
-                novalidate
+              </div>
+              <div class="form-field">
+                <label for="phone">Teléfono</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  class="modal__input modal__input--padding modal__input--margin modal__input--font"
+                />
+                <svg width="18" height="18" class="form-field__icon">
+                  <use href="./img/icons/sprite.svg#icon-phone-black"></use>
+                </svg>
+              </div>
+              <div class="form-field">
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="modal__input modal__input--padding modal__input--margin modal__input--font"
+                />
+                <svg width="18" height="18" class="form-field__icon">
+                  <use href="./img/icons/sprite.svg#icon-email-black"></use>
+                </svg>
+              </div>
+              <div class="form-field">
+                <label for="comment">Comentarios</label>
+                <textarea
+                  name="comment"
+                  id="comment"
+                  rows="6"
+                  placeholder="Introduzca el texto"
+                  class="modal__textarea modal__textarea--padding modal__textarea--margin modal__input--font"
+                ></textarea>
+              </div>
+              <div class="form-field__policy">
+                <label>
+                  <input type="checkbox" class="form-field__checkbox-policy" />
+                  <svg width="16" height="15" class="form-field__checkbox-icon">
+                    <use href="./img/icons/sprite.svg#caja-vacia"></use>
+                  </svg>
+                  <span
+                    class="form-field__policy-text form-field__policy-text--padding"
+                  >
+                    Estoy de acuerdo y acepto los terminos y condiciones
+                  </span>
+                </label>
+              </div>
+              <button
+                type="submit"
+                class="form-field__button form-field__button--margin"
               >
-                <label for="name" class="label-modal">
-                  Nombre
-                  <div class="modal-relative">
-                    <input
-                      class="modal-form"
-                      type="text"
-                      name="name"
-                      id="name"
-                      autofocus
-                      required
-                    />
-                    <svg class="svg-modal-v1" width="18" height="18">
-                      <use
-                        href="./img/icons/sprite.svg#icon-person-black"
-                      ></use>
-                    </svg>
-                  </div>
-                </label>
-                <label for="phone" class="label-modal">
-                  Teléfono
-                  <div class="modal-relative">
-                    <input
-                      class="modal-form"
-                      type="text"
-                      name="phone"
-                      id="phone"
-                      required
-                    />
-                    <svg class="svg-modal-v1" width="18" height="18">
-                      <use href="./img/icons/sprite.svg#icon-phone-black"></use>
-                    </svg>
-                  </div>
-                </label>
-                <label for="mail" class="label-modal">
-                  E-mail
-                  <div class="modal-relative">
-                    <input
-                      class="modal-form"
-                      type="text"
-                      name="mail"
-                      id="mail"
-                      required
-                    />
-                    <svg class="svg-modal-v1" width="18" height="18">
-                      <use href="./img/icons/sprite.svg#icon-email-black"></use>
-                    </svg>
-                  </div>
-                </label>
-                <label class="label-modal">
-                  Comentarios
-                  <textarea
-                    name="feedback"
-                    rows="9"
-                    placeholder="Introduzca el texto"
-                  ></textarea>
-                </label>
-                <div class="modal-form-coment">
-                  <label for="checkbox">
-                    <input
-                      class="checkbox hero--hidden"
-                      type="checkbox"
-                      name="checkbox"
-                      id="checkbox"
-                    />
-                    <svg class="check" width="16" height="15">
-                      <use href="./img/icons/sprite.svg#checkbox"></use>
-                    </svg>
-                  </label>
-                </div>
-                <p class="conditions">
-                  Estoy de acuerdo con el boletín informativo y acepto los
-                  Términos y Condiciones
-                </p>
-                <button type="submit" class="btn-modal-submit">Enviar</button>
-              </form>
-            </div>
+                Enviar
+              </button>
+            </form>
           </div>
         </div>
       </section>
       <section class="section feature">
         <div class="container">
-          <ul class="grid">
-            <li class="grid__item features__item">
+          <ul class="basis">
+            <li class="basis__item features__item">
               <div class="features__box features__box--margin">
                 <svg width="70" height="70">
                   <use href="./img/icons/sprite.svg#Antena"></use>
@@ -227,7 +216,7 @@
                 para así desarrollar una solución a su medida.
               </p>
             </li>
-            <li class="grid__item features__item">
+            <li class="basis__item features__item">
               <div class="features__box features__box--margin">
                 <svg width="70" height="70">
                   <use href="./img/icons/sprite.svg#Reloj"></use>
@@ -242,7 +231,7 @@
                 respetar los plazos acordados.
               </p>
             </li>
-            <li class="grid__item features__item">
+            <li class="basis__item features__item">
               <div class="features__box features__box--margin">
                 <svg width="70" height="70">
                   <use href="./img/icons/sprite.svg#Diagrama"></use>
@@ -256,7 +245,7 @@
                 aplicación de soluciones.
               </p>
             </li>
-            <li class="grid__item features__item">
+            <li class="basis__item features__item">
               <div class="features__box features__box--margin">
                 <svg width="70" height="70">
                   <use href="./img/icons/sprite.svg#Astronauta"></use>
@@ -676,7 +665,7 @@
     <footer class="footbar">
       <div class="container">
         <address class="footer-links">
-          <a href="./index.html" class="logo">WebStudio</a>
+          <a href="./index.html" class="logo"><span>Web</span>Studio</a>
           <ul>
             <li>
               Calz. Ticomán 500, Ciudad de <br />

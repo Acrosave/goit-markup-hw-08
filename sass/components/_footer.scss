@@ -4,6 +4,15 @@
   padding: 60px 0;
 }
 footer .logo {
+  color: $color-primario-fondo-pantalla;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.93;
+  letter-spacing: 0.03em;
+}
+footer .logo span {
   color: $color-web;
   font-family: 'Raleway', sans-serif;
   font-style: normal;

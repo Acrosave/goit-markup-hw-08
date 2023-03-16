@@ -22,6 +22,15 @@ header .container nav {
   gap: 100px;
 }
 header .container nav .logo {
+  color: $color-principal-texto;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+}
+header .container nav .logo span {
   color: $color-web;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
