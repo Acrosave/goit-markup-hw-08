@@ -1,5 +1,4 @@
 .container-card {
-  width: 370px;
   background-color: $color-primario-fondo-pantalla;
   display: flex;
   flex-direction: column;
@@ -9,6 +8,11 @@
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.list-cards {
+  flex-basis: calc((100% - 30px * 1) / 1);
+  margin-left: 15px;
+  margin-bottom: 30px;
 }
 .flex-list {
   margin-top: 50px;

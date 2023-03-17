@@ -46,7 +46,11 @@
     display: none;
   }
 }
-
+@media screen and (max-width: 1200px) {
+  .mobile-hidden {
+    display: none;
+  }
+}
 .menu-toggle:hover,
 .menu-toggle:focus {
   background-color: rgba(0, 0, 0, 0.1);
@@ -105,8 +109,8 @@
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  gap: 20px;
-  padding-bottom: 100px;
+  gap: 10px;
+  padding-top: 250px;
 }
 .menu-container .page-header a {
   font-size: 14px;
@@ -120,7 +124,7 @@
 }
 .menu-container div {
   display: flex;
-  gap: 50px;
+  gap: 15px;
 }
 
 .menu-container div {
