@@ -22,25 +22,25 @@
   flex-wrap: wrap;
   padding-bottom: 94px;
 }
-@media screen and (max-width: 767px) {
-  .team-section .container .team-cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    align-items: flex-end;
-    padding-bottom: 60px;
-  }
+.team-section .container .team-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+  padding-bottom: 60px;
   .flex-basis-work {
     flex-basis: calc((100% - 30px * 1) / 1);
   }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
+  @media screen and (min-width: 768px) {
+    .flex-basis-work {
+      flex-basis: calc((100% - 30px * 2) / 2);
+    }
   }
-  .flex-basis-work {
-    flex-basis: calc((100% - 30px * 4) / 4);
+  @media screen and (min-width: 1200px) {
+    .flex-basis-work {
+      flex-basis: calc((100% - 30px * 4) / 4);
+    }
   }
 }
 .team-section .container .team-cards .team-cards__father {

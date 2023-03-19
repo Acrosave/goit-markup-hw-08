@@ -42,6 +42,28 @@ footer .container {
     text-align: center;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footbar {
+    font-style: normal;
+    background-color: $color-segundo-fondo-pantalla;
+    padding: 70px 60px;
+  }
+  footer .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 80px;
+    text-align: center;
+  }
+  .suscribe-footer .flex-suscribe {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0px 150px;
+  }
+}
 footer .container .footer-links ul {
   list-style: none;
 }
@@ -94,7 +116,7 @@ footer .container aside ul li {
   align-items: center;
   justify-content: center;
   background-color: #ffffff1a;
-  border-radius: 25px;
+  border-radius: 100%;
   box-shadow: hsla(0, 0%, 0%, 0.479) 0 3px 5px;
   cursor: pointer;
   height: 44px;

@@ -78,6 +78,16 @@ header .container nav .nav .nav__page.nav__current::after {
 .page-header__links {
   margin-right: 50px;
 }
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
+  .page-header__links {
+    margin-right: 0px;
+  }
+  .page-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .page-header {
   display: flex;
   align-items: center;
@@ -99,7 +109,7 @@ header
   .page-header__link
   .page-header__icon.page-header__smartphone {
   fill: $color-segundo-texto;
-  width: 10px;
+  width: 20px;
   height: 17px;
 }
 header .container .page-header li .page-header__link:hover,
