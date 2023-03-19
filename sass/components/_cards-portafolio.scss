@@ -45,6 +45,21 @@
 .container-card__card-body {
   padding: 20px 24px;
 }
+@media screen and (max-width: 767px) {
+  .container-card__card-animation {
+    top: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    padding: 80px 24px;
+    color: $color-primario-fondo-pantalla;
+    letter-spacing: 0.03em;
+    transform: translateY(101%);
+    transition: transform 250ms ease;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
 .container-card__card-animation {
   top: 0px;
   position: absolute;
