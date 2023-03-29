@@ -1280,7 +1280,7 @@ footer .container aside ul li:hover a .icon {
   flex-basis: calc((100% - 30px) / 1);
   margin-right: 15px;
   margin-left: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 @media screen and (min-width: 768px) {
   .list-cards {
@@ -1319,19 +1319,9 @@ footer .container aside ul li:hover a .icon {
   padding: 20px 24px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
   .container-card__card-animation {
-    top: 0px;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(33, 150, 243, 0.9);
-    padding: 80px 24px;
-    color: #ffffff;
-    letter-spacing: 0.03em;
-    transform: translateY(101%);
-    transition: transform 250ms ease;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 14px;
   }
 }
 .container-card__card-animation {
@@ -1340,7 +1330,7 @@ footer .container aside ul li:hover a .icon {
   width: 100%;
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
-  padding: 50px 24px;
+  padding: 40px 19px;
   color: #ffffff;
   letter-spacing: 0.03em;
   transform: translateY(101%);
