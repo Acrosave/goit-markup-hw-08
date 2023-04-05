@@ -29,13 +29,13 @@
     text-decoration: underline;
   }
   &__checkbox-policy {
-    position: absolute !important;
+    position: absolute;
     clip: rect(1px 1px 1px 1px);
     clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
     overflow: hidden;
   }
   &__policy {
@@ -128,7 +128,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding-left: 0px;
+    padding-left: 20px;
   }
 }
 .form-field__checkbox-icon {
@@ -150,11 +150,10 @@
     border-radius: 2px;
   }
   @media screen and (min-width: 473px) {
-    top: 50%;
+    top: 27%;
   }
   @media screen and (min-width: 1200px) {
-    top: 50%;
-    left: 2.5%;
+    top: 27%;
   }
 }
 .form-field__button {
@@ -178,7 +177,11 @@
   }
 }
 .form-field__button--margin {
-  margin-top: 31px;
+  margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
+}
+.form-field__policy a {
+  text-decoration: underline;
+  color: rgb(131, 16, 238);
 }
