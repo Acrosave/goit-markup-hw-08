@@ -7,6 +7,24 @@
     bottom: 0;
   }
 }
+input:invalid {
+  animation: shake 500ms;
+  color: 212121;
+}
+@keyframes shake {
+  25% {
+    transform: translateX(4px);
+  }
+  50% {
+    transform: translateX(-4px);
+  }
+  75% {
+    transform: translateX(4px);
+  }
+}
+.modal__input:required:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
 .modal__form--padding {
   padding: 40px;
 }
