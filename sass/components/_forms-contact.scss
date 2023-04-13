@@ -1,0 +1,49 @@
+form .label-contact,
+form legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+  color: $color-segundo-texto;
+}
+
+.checkbox {
+  margin: 20px 0;
+}
+
+.enviar {
+  width: 40%;
+  padding: 15px 0;
+  font-size: 18px;
+  font-family: inherit;
+  color: $color-primario-fondo-pantalla;
+  background: $color-web;
+  border: none;
+  border-radius: 5px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: linear;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background: $color-web;
+  transform: scale(1.1);
+}
+fieldset {
+  margin: 50px 0px;
+}
+table {
+  margin: 40px 0px;
+}
+
+thead {
+  background: $color-segundo-texto;
+  color: $color-primario-fondo-pantalla;
+  font-family: inherit;
+}
+
+td,
+th {
+  border: 1px solid #000000;
+  padding: 8px 15px;
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Html,servicio,web,Web,ayuda" />
+    <meta name="author" content="Santiago Andres Medina Alvarez" />
+    <meta
+      name="description"
+      content="Esta pagina es amigable para el cliente"
+    />
+    <meta name="robots" content="index,follow" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>WebStudio</title>
+  </head>
+  <body>
+    <header class="page-header header">
+      <div class="container">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="icon-close" width="40" height="40">
+            <use href="./img/icons/sprite.svg#icon-menu-mob"></use>
+          </svg>
+        </button>
+        <nav>
+          <a class="logo" href="index.html"><span>Web</span>Studio</a>
+          <ul class="nav menu">
+            <li>
+              <a class="nav__page" href="./index.html">Estudio</a>
+            </li>
+            <li>
+              <a class="nav__page" href="./portafolio.html">Portafolio</a>
+            </li>
+            <li>
+              <a class="nav__page nav__current" href="./contacto.html"
+                >Contactos</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul class="page-header menu">
+          <li>
+            <a
+              href="mailto:info@devstudio.com"
+              class="page-header__mail page-header__links page-header__link"
+              ><svg class="page-header__icon page-header__email">
+                <use href="./img/icons/sprite.svg#email"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a
+              href="tel:+525555296000"
+              class="page-header__tel page-header__links page-header__link"
+              ><svg class="page-header__icon page-header__smartphone">
+                <use href="./img/icons/sprite.svg#smartphone"></use>
+              </svg>
+              +57 212-772 41-50
+            </a>
+          </li>
+        </ul>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg width="24" height="24">
+              <use href="./img/icons/sprite.svg#icon-close-btn-mob"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu">
+            <li>
+              <a href="./index.html">Estudio</a>
+            </li>
+            <li>
+              <a href="./portafolio.html">Portafolio</a>
+            </li>
+            <li>
+              <a class="nav__current" href="./contacto.html">Contactos</a>
+            </li>
+          </ul>
+          <ul class="page-header">
+            <li>
+              <a href="tel:+573217132993"> +57 321 713 2993</a>
+            </li>
+            <li>
+              <a href="mailto:santigomas20@gmail.com" class="ol">
+                santigomas20@gmail.com</a
+              >
+            </li>
+          </ul>
+          <div>
+            <a href="https://www.instagram.com/andresm.j/">Instagram</a>
+            <a href="https://twitter.com/2_calvares">Twitter</a>
+            <a href="https://www.facebook.com/santiagodres.ma/">Facebook</a>
+            <a
+              href="https://www.linkedin.com/in/santiago-andres-medina-alvarez-3a5265256"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <form autocomplete="on">
+            <div class="form-field">
+              <label class="label-contact" for="name">Nombre</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="modal__input modal__input--padding modal__input--margin modal__input--font"
+                required
+                pattern="[A-Z a-z]*"
+                title="Este elemento es requerido"
+              />
+            </div>
+            <div class="form-field">
+              <label class="label-contact" for="phone">Teléfono</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                class="modal__input modal__input--padding modal__input--margin modal__input--font"
+                required
+                placeholder="(XX) XXXX XXXX"
+                title="Este elemento es requerido"
+                pattern="[0-9]+"
+              />
+            </div>
+            <div class="form-field">
+              <label class="label-contact" for="email">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="modal__input modal__input--padding modal__input--margin modal__input--font"
+                required
+                placeholder="info@devstudio.com"
+                title="Este elemento es requerido"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              />
+            </div>
+            <div class="form-field">
+              <label class="label-contact" for="comment">Comentarios</label>
+              <textarea
+                name="comment"
+                id="comment"
+                rows="6"
+                placeholder="Introduzca el texto"
+                class="modal__textarea modal__textarea--padding modal__textarea--margin modal__input--font"
+              ></textarea>
+            </div>
+            <fieldset>
+              <legend>¿Cómo le gustaría que lo contactemos?</legend>
+
+              <label class="label-contact" for="radio-email"
+                ><input
+                  type="radio"
+                  name="contacto"
+                  value="email"
+                  id="radio-email"
+                />Email</label
+              >
+
+              <label class="label-contact" for="radio-telefono"
+                ><input
+                  type="radio"
+                  name="contacto"
+                  value="telefono"
+                  id="radio-telefono"
+                />Teléfono</label
+              >
+
+              <label class="label-contact" for="radio-whatsapp"
+                ><input
+                  type="radio"
+                  name="contacto"
+                  value="whatsapp"
+                  id="radio-whatsapp"
+                  checked
+                />WhatsApp</label
+              >
+            </fieldset>
+
+            <fieldset>
+              <legend>¿En cuál horario prefiere ser atendido?</legend>
+              <select>
+                <option>Mañana</option>
+                <option>Tarde</option>
+                <option>Noche</option>
+              </select>
+            </fieldset>
+
+            <label class="label-contact" class="checkbox"
+              ><input type="checkbox" required checked /> ¿Le gustaría recibir
+              novedades ?</label
+            >
+
+            <input type="submit" value="Enviar formulario" class="enviar" />
+          </form>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Día</th>
+                <th>Horario</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lunes</td>
+                <td>08h ~ 20h</td>
+              </tr>
+              <tr>
+                <td>Miércoles</td>
+                <td>08h ~ 20h</td>
+              </tr>
+              <tr>
+                <td>Viernes</td>
+                <td>08h ~ 20h</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer class="footbar">
+      <div class="container">
+        <address class="footer-links">
+          <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+          <ul>
+            <li>
+              Calz. Ticomán 500, Ciudad de <br />
+              México, CDMX, México
+            </li>
+            <li>
+              <a
+                class="footer-links__contact"
+                href="mailto:santigomas20@gmail.com"
+                >santigomas20@gmail.com</a
+              >
+            </li>
+            <li>
+              <a class="footer-links__contact" href="tel:+573217132993 "
+                >+57 321 713 2993</a
+              >
+            </li>
+            <li>&copy Copyright Santiago Medina - 2023</li>
+          </ul>
+        </address>
+        <aside>
+          <h3>ENCUENTRENOS EN</h3>
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/andresm.j/" target="_blank">
+                <svg class="icon" width="20" height="20">
+                  <use href="./img/icons/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/2_calvares" target="_blank">
+                <svg class="icon" width="20" height="20">
+                  <use href="./img/icons/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/santiagodres.ma/"
+                target="_blank"
+              >
+                <svg class="icon" width="20" height="20">
+                  <use href="./img/icons/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/santiago-andres-medina-alvarez-3a5265256"
+                target="_blank"
+              >
+                <svg class="icon" width="20" height="20">
+                  <use href="./img/icons/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <div class="suscribe-footer">
+          <h3>SUSCRÍBASE al boletín informativo</h3>
+          <form name="form-footer">
+            <div class="flex-suscribe">
+              <label for="suscribe" class="flex-suscribe__label-footer">
+                <input
+                  class="flex-suscribe__input-footer"
+                  placeholder="Correo electrónico"
+                  type="email"
+                  name="suscribe"
+                  id="suscribe"
+                />
+              </label>
+              <button class="flex-suscribe__btn-footer" type="submit">
+                Suscríbase
+                <svg width="24" height="24">
+                  <use href="./img/icons/sprite.svg#icon-telegram"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
